@@ -1,0 +1,413 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;700&amp;family=Bodoni+Moda:wght@400;500;700&amp;family=EB+Garamond:wght@400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-container": "#f5ecec", "surface-container-high": "#efe6e6", primary: "#76525d", "tertiary-container": "#807176", "on-primary-fixed-variant": "#5e3d48", "on-tertiary-fixed-variant": "#504348", "on-surface-variant": "#4f4447", "secondary-fixed-dim": "#ffb1c6", "on-secondary": "#ffffff", "on-secondary-fixed": "#3c031c", "inverse-surface": "#342f30", "primary-container": "#906a76", secondary: "#90475e", "inverse-primary": "#e8bbc8", "inverse-on-surface": "#f7efee", error: "#ba1a1a", "secondary-fixed": "#ffd9e1", "on-primary-container": "#fffbff", "error-container": "#ffdad6", "secondary-container": "#fda1bb", "surface-bright": "#fff8f7", "on-primary": "#ffffff", "primary-fixed": "#ffd9e3", "on-secondary-fixed-variant": "#743047", "surface-container-highest": "#e9e1e0", "on-error": "#ffffff", "tertiary-fixed-dim": "#d4c2c7", tertiary: "#66585d", "on-primary-fixed": "#2e131d", "tertiary-fixed": "#f1dee3", "on-background": "#1e1b1b", "on-error-container": "#93000a", "surface-container-low": "#faf2f1", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#23191d", "on-secondary-container": "#79344b", background: "#fff8f7", "outline-variant": "#d3c3c6", outline: "#817477", "surface-tint": "#785460", "on-surface": "#1e1b1b", "on-tertiary-container": "#fffbff", "surface-dim": "#e0d8d8", "on-tertiary": "#ffffff", surface: "#fff8f7", "primary-fixed-dim": "#e8bbc8", "surface-variant": "#e9e1e0"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-md": "1rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-xl": "2.25rem", margin: "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-desktop": "3rem", gutter: "1rem"}, fontFamily: {"body-lg": ["\"Source Sans 3\""], caption: ["Newsreader"], "label-sm": ["\"Source Sans 3\""], "title-md": ["\"Source Sans 3\""], "display-lg": ["Newsreader"], "headline-md": ["Newsreader"], "body-md": ["\"Source Sans 3\""], "headline-lg": ["Newsreader"], "body-sm": ["\"Source Sans 3\""], "label-md": ["\"Source Sans 3\""], "headline-sm": ["Newsreader"], headline: ["Libre Caslon Text"], body: ["Bodoni Moda"], display: ["Libre Caslon Text"], label: ["EB Garamond"]}, fontSize: {"body-lg": ["17px", {lineHeight: "26px", fontWeight: "400"}], caption: ["13px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400"}], "label-sm": ["11px", {lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600"}], "title-md": ["16px", {lineHeight: "24px", fontWeight: "600"}], "display-lg": ["36px", {lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "500"}], "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}], "body-md": ["15px", {lineHeight: "22px", fontWeight: "400"}], "headline-lg": ["28px", {lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600"}], "body-sm": ["13px", {lineHeight: "18px", fontWeight: "400"}], "label-md": ["13px", {lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600"}], "headline-sm": ["18px", {lineHeight: "26px", fontWeight: "600"}]}}}};</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl border-b border-surface-container-high shadow-[0_1px_8px_rgba(168,32,117,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="BiblioTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Kelz6439-Bg9MTWuzxs2kI8kU6kKG5ldpR9Qg1FzEkxAktKJjWyVBEggV56vr3IN_BLuHjyXxsNYryzw29283yDQRhnFbvY43651ms8Zkhwye_7WSibCybK2QsH-l0KnQnI5xegoXjXWond5AWd835PD_iyJUlBfd8XwQtR_4l2I9L58JKyzGkNREhb-Y_D3fcfRqvdnHPUyIOmPy_ZiBVpOeaLpE3-4o_Tygnum"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-headline">BiblioTrack</span><span class="font-caption text-caption text-on-surface-variant -mt-1 hidden xs:block">Catálogo</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notificaciones" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><button aria-label="Perfil del usuario" class="w-11 h-11 rounded-full flex items-center justify-center hover:opacity-90 transition-opacity ring-1 ring-outline-variant/60"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDUpDSELZ0N5MrWGCgfpZgbR4Py2PktOvhPF12s9MdQXerC2rHduWHcWnaJBLBLp9_pjKsyyWH86fqUyraN-xEUsE7gRAPrdBRdCZ35410lnwxleYU5ppMoX9OXo9EG7DOSlveHax90NKwLESnBlb4Mxph1AxKaDTyTYkTtNdHVATJojMVPEFMo8YhMvHY2VuABcpCIIx0MR0O-o-shwNdSkl5SkdkaAiBWUvdLdw8"></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<div class="px-margin pt-2 pb-3 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container rounded-xl p-1.5 shadow-sm border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-[22px] ml-2 select-none">search</span>
+<input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-outline py-2 px-1 text-[14px]" id="catalogSearch" placeholder="Buscar por título, autor, ISBN o materia..." type="search">
+<button aria-label="Escanear código de barras" class="w-10 h-10 rounded-lg flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" id="barcodeScanBtn" onclick="toggleScanToast()">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</button>
+<button aria-label="Filtros avanzados" class="w-10 h-10 rounded-lg flex items-center justify-center bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm" id="filterModalBtn" onclick="toggleFilterTray()" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+</div>
+<!-- Filter Chips Horizontales -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-margin px-margin">
+<button class="filter-chip active flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" data-category="todos" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">
+        Todos
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5 border border-outline-variant/40" data-category="disponibles">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+        Disponibles ahora
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all border border-outline-variant/40" data-category="literatura">
+        Literatura
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all border border-outline-variant/40" data-category="tecnologia">
+        Ciencia y Tecnología
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all border border-outline-variant/40" data-category="historia">
+        Historia
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all border border-outline-variant/40" data-category="filosofia">
+        Filosofía
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all border border-outline-variant/40" data-category="arte">
+        Arte
+      </button>
+</div>
+</div>
+<!-- Novedades y Recomendados (Carrusel Editorial) -->
+<section class="mt-2 mb-5">
+<div class="px-margin flex items-baseline justify-between mb-2.5">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-headline tracking-tight">Novedades y Selección</h2>
+<p class="font-caption text-caption text-on-surface-variant italic">Adquisiciones recientes de la colección central</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary hover:text-primary-container font-semibold cursor-pointer hover:underline">Ver todas</span>
+</div>
+<div class="flex gap-3.5 overflow-x-auto no-scrollbar px-margin pt-1 pb-3 -mx-0">
+<!-- Tarjeta Destacada 1 -->
+<article class="flex-shrink-0 w-36 flex flex-col group cursor-pointer" onclick="openBookModal('Ficciones', 'Jorge Luis Borges')">
+<div class="relative w-full aspect-[3/4.2] rounded-lg overflow-hidden bg-surface-container-highest shadow-md group-hover:shadow-lg transition-all border border-outline-variant/40">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" data-alt="Portada del libro Ficciones de Jorge Luis Borges, encuadernación clásica minimalista en papel pergamino con un laberinto dorado grabado, tono navy profundo y sombras cálidas de biblioteca, fotografía editorial de alta calidad." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApE_dCc3lqBnHuB8ezGpIUeH6LByncowVln9Cag3sVDjaNwCzj58OVG4W_GQNG4Gx1qPDFS9-INyxtzOOvm4D5uxDJvVCl-65ZREpE7U1OrALDzkw33eODZpG9KOyNLD24dXAxRIQKmz6TiXIF54n6juaYU8VcKwzwtLm9zPdxa7lzFfR8S9QyqzYnyYf3f7CiGI_0haPn4G03yi9gIbuxwx7SMvUHQE3VudS_RFwd">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/85 via-primary/20 to-transparent"></div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-bright/95 text-tertiary text-[10px] font-semibold tracking-wide flex items-center gap-1 shadow-sm border border-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Disponible
+          </span>
+<div class="absolute bottom-2 left-2 right-2">
+<span class="text-surface-bright font-label-sm text-[10px] opacity-90 block">Archivado en 2024</span>
+</div>
+</div>
+<div class="mt-1.5 flex flex-col">
+<h3 class="font-headline-sm text-[14px] leading-tight text-primary font-semibold line-clamp-1 group-hover:text-secondary transition-colors">Ficciones</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">J. L. Borges</p>
+</div>
+</article>
+<!-- Tarjeta Destacada 2 -->
+<article class="flex-shrink-0 w-36 flex flex-col group cursor-pointer" onclick="openBookModal('Sapiens: De animales a dioses', 'Yuval Noah Harari')">
+<div class="relative w-full aspect-[3/4.2] rounded-lg overflow-hidden bg-surface-container-highest shadow-md group-hover:shadow-lg transition-all border border-outline-variant/40">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" data-alt="Portada contemporánea del libro Sapiens con una huella dactilar tenue en tonos ocre terracota, fondo crema marfil y tipografía clásica editorial sobria, iluminación suave de estudio bibliotecario." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmMVw_5jjt54vBTCARiLkpOFQi_erkpCu8lzd4qKesbnz4Ai0fgXE-zKjxsd85_q-BgFRX0rRuUo3mRUU2HqhswjVd0ycn-IMJralWaeY5AbbmSFx8Fp-tdT9ZhWYQ-jSXJR-AIYAT_df86TVV-Oh35lgCtVeKGRVlzg96BHs6_NvaWV4gjga3XeFb1bjygjZG7nOGViRlmFajhfnKUsseqK1hgerYksdBTdkw4cFN">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/85 via-primary/20 to-transparent"></div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-bright/95 text-tertiary text-[10px] font-semibold tracking-wide flex items-center gap-1 shadow-sm border border-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Disponible
+          </span>
+<div class="absolute bottom-2 left-2 right-2">
+<span class="text-surface-bright font-label-sm text-[10px] opacity-90 block">Ed. Crítica</span>
+</div>
+</div>
+<div class="mt-1.5 flex flex-col">
+<h3 class="font-headline-sm text-[14px] leading-tight text-primary font-semibold line-clamp-1 group-hover:text-secondary transition-colors">Sapiens</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">Y. N. Harari</p>
+</div>
+</article>
+<!-- Tarjeta Destacada 3 -->
+<article class="flex-shrink-0 w-36 flex flex-col group cursor-pointer" onclick="openBookModal('Klara y el Sol', 'Kazuo Ishiguro')">
+<div class="relative w-full aspect-[3/4.2] rounded-lg overflow-hidden bg-surface-container-highest shadow-md group-hover:shadow-lg transition-all border border-outline-variant/40">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" data-alt="Cubierta de libro literario con un sol geométrico minimalista de tono ámbar suave sobre un fondo azul tinta profundo con textura de lienzo antiguo, diseño pulcro de editorial académica." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMs8RDzr-aGQjyTl5JwoV34FAEvypV2-yPc1AnAVQAx678WzaBut5wGWRPt67rw_j61s0ra56SXvPd--Af8pTiPqQ6_32awHEr1GgAzXNM0LLTUVE4GaBRkjs6GmscQHGX6q0UikhO7oLDR8xtVRGrxOD4hllFoX3OvTQp8rKTnRx6wC2TaSa-wd6r4HdjBAb7y4fh8OuMWNGgadPQ2_8fgb5mpjECHHfef-lCI-e5">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/85 via-primary/20 to-transparent"></div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-bright/95 text-tertiary text-[10px] font-semibold tracking-wide flex items-center gap-1 shadow-sm border border-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Disponible
+          </span>
+<div class="absolute bottom-2 left-2 right-2">
+<span class="text-surface-bright font-label-sm text-[10px] opacity-90 block">Premio Nobel</span>
+</div>
+</div>
+<div class="mt-1.5 flex flex-col">
+<h3 class="font-headline-sm text-[14px] leading-tight text-primary font-semibold line-clamp-1 group-hover:text-secondary transition-colors">Klara y el Sol</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] truncate">Kazuo Ishiguro</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Lista Principal: Resultados del Catálogo -->
+<section class="px-margin flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-primary font-headline tracking-tight">Fondo Bibliográfico</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] border border-outline-variant/40">1,420 obras</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-caption font-caption">
+<span class="">Orden: Relevancia</span>
+<span class="material-symbols-outlined text-[16px] text-primary">expand_more</span>
+</div>
+</div>
+<!-- Libro 1: Cien años de soledad -->
+<article class="bg-surface-container-lowest p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow flex gap-3.5 relative border border-outline-variant/30">
+<div class="w-20 aspect-[3/4.2] flex-shrink-0 rounded-md overflow-hidden bg-surface-container-high relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Portada del libro Cien años de soledad de Gabriel García Márquez con mariposas amarillas estilizadas en estilo xilografía sobre papel verjurado beige y detalles azules navales, composición editorial clásica y refinada." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFtAnjfA9WgUrr2K7BVOioQVmRLQdXlxxwVunalIhLwqsODkvvfxHSMublqQ4w0vW-6Wml5IbwA5DxTYASG1g8ymUNuxg-uuohRNRCHBwF_t333XYN2YXnWbXmetcpxvKXy3mBWFYm_HvTaDToiasp_EHUqe9AxCojwhko-AQfHo3sQyKmAGolUq68A3LPxkLToVFEWZBdRr97LPY83_o9n2TZ261gP9f1h9hRgkl-">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div>
+<div class="flex items-start justify-between gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-tertiary font-label-sm text-[10px] tracking-wide inline-flex items-center gap-1 border border-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Disponible (3)
+            </span>
+<span class="font-caption text-caption text-outline text-[11px] font-mono tracking-tight">823.91 G216c</span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-primary font-semibold mt-1 truncate font-headline">Cien años de soledad</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">Gabriel García Márquez</p>
+<div class="mt-1 flex items-center gap-2 text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">apartment</span>
+              Sala de Literatura
+            </span>
+<span class="">•</span>
+<span class="text-outline">Estante C-12</span>
+</div>
+</div>
+<div class="mt-2 pt-2 flex items-center justify-between border-t border-outline-variant/20 bg-surface-container-low/60 -mx-3 -mb-3 px-3 py-1.5 rounded-b-xl">
+<span class="font-caption text-caption text-[11px] text-on-surface-variant">Ed. Cátedra (1987)</span>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded-md text-primary hover:bg-surface-container font-label-md text-[12px] transition-colors" onclick="openBookModal('Cien años de soledad', 'Gabriel García Márquez')">
+              Ficha
+            </button>
+<button class="px-3 py-1 rounded-md bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-md text-[12px] font-semibold shadow-sm" onclick="showHoldConfirmed('Cien años de soledad')" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">
+              Reservar
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Libro 2: Clean Code -->
+<article class="bg-surface-container-lowest p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow flex gap-3.5 relative border border-outline-variant/30">
+<div class="w-20 aspect-[3/4.2] flex-shrink-0 rounded-md overflow-hidden bg-surface-container-high relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Portada del manual técnico Clean Code de Robert C Martin con diseño editorial sobrio tipográfico sobre cubierta de papel crema envejecido y tipografía técnica nítida en azul marino oscuro." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnrI0uIeVGHhk15_kq1jDQiA79p25rb0XB1T70XSyLK0jzMDo56ARr2Mf1yRGsjnyKihcrQR-YMo1I9aryGDhG2wAeXdnxY7b97OBftDLx6cIeASq9tbMy1NnXiZnDOJJ6BRys0pRLMwVzW6uK6nKZz-FPWDngd1IQRrHl1FBlo1Xm7HdYJUTCjiXnRPabPUXJkgvSfg1KS8uiyECOGy07ZERXhPsUVb2QYbkXlwzA">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div>
+<div class="flex items-start justify-between gap-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] tracking-wide inline-flex items-center gap-1 font-semibold border border-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              En préstamo
+            </span>
+<span class="font-caption text-caption text-outline text-[11px] font-mono tracking-tight">005.1 M382c</span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-primary font-semibold mt-1 truncate font-headline">Clean Code: A Handbook</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">Robert C. Martin ("Uncle Bob")</p>
+<div class="mt-1 flex items-center gap-2 text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[14px]">event_repeat</span>
+              Devolución: 24 May
+            </span>
+<span class="">•</span>
+<span class="text-outline">Sala Técnica</span>
+</div>
+</div>
+<div class="mt-2 pt-2 flex items-center justify-between border-t border-outline-variant/20 bg-surface-container-low/60 -mx-3 -mb-3 px-3 py-1.5 rounded-b-xl">
+<span class="font-caption text-caption text-[11px] text-outline">1 usuario en espera</span>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded-md text-primary hover:bg-surface-container font-label-md text-[12px] transition-colors" onclick="openBookModal('Clean Code', 'Robert C. Martin')">
+              Ficha
+            </button>
+<button class="px-3 py-1 rounded-md bg-secondary text-on-secondary hover:bg-secondary-container transition-colors font-label-md text-[12px] font-semibold shadow-sm" onclick="showHoldConfirmed('Clean Code')" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">
+              Apartar turno
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Libro 3: El infinito en un junco -->
+<article class="bg-surface-container-lowest p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow flex gap-3.5 relative border border-outline-variant/30">
+<div class="w-20 aspect-[3/4.2] flex-shrink-0 rounded-md overflow-hidden bg-surface-container-high relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Portada del libro El infinito en un junco de Irene Vallejo, con un dibujo estilizado botánico de papiro antiguo y caligrafía griega dorada sobre fondo de papel pergamino natural, estética poética y académica." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJtp7ti9bYnMbtGpn8RF2vVn8mFuSLySFAQUATtxfcA6R4w7ZdHgwEOOVSWSxI7UiTEmUb3OQhEF1cUZ4H3kK-IL81jaU34RAnzAmtR7hWYDY2HeKhfH5totUHgigy_A14NDreVHL7K4JjxqxWT9MTeYEazQIsfweqf7S5Eh06r_Ze3lcoaGAQMMx0ZMZxVNLcUbAJJpSwhWR-wBdWDiGWUYJuj9ki-hii7KLzw9s1">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div>
+<div class="flex items-start justify-between gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-tertiary font-label-sm text-[10px] tracking-wide inline-flex items-center gap-1 border border-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Disponible (2)
+            </span>
+<span class="font-caption text-caption text-outline text-[11px] font-mono tracking-tight">002.09 V182i</span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-primary font-semibold mt-1 truncate font-headline">El infinito en un junco</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">Irene Vallejo</p>
+<div class="mt-1 flex items-center gap-2 text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">apartment</span>
+              Sala General
+            </span>
+<span class="">•</span>
+<span class="text-outline">Estante H-04</span>
+</div>
+</div>
+<div class="mt-2 pt-2 flex items-center justify-between border-t border-outline-variant/20 bg-surface-container-low/60 -mx-3 -mb-3 px-3 py-1.5 rounded-b-xl">
+<span class="font-caption text-caption text-[11px] text-on-surface-variant">Premio Ensayo (2019)</span>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded-md text-primary hover:bg-surface-container font-label-md text-[12px] transition-colors" onclick="openBookModal('El infinito en un junco', 'Irene Vallejo')">
+              Ficha
+            </button>
+<button class="px-3 py-1 rounded-md bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-md text-[12px] font-semibold shadow-sm" onclick="showHoldConfirmed('El infinito en un junco')" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">
+              Reservar
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Libro 4: Breve historia del tiempo -->
+<article class="bg-surface-container-lowest p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow flex gap-3.5 relative border border-outline-variant/30">
+<div class="w-20 aspect-[3/4.2] flex-shrink-0 rounded-md overflow-hidden bg-surface-container-high relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Portada de Breve historia del tiempo de Stephen Hawking con una ilustración cosmológica sutil de ondas espaciotemporales en tinta sepia y azul medianoche profundo, estilo grabado científico de astronomía." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOc_Fs2Nb25nvnEVskMio3ZGU6lEqL8oPWUmEygypetCk6XLLJ6vwCXxsZwD7pkuud1fVZejnz6ofXlwE2kGOQ6-e5ksA0nSpjuVZMhl1145pA32ZbSmNyrh2PIevgrw7kS89OWj6PVfIWJp2neEMNvrKt2dJusa1bgjh23-TCOIBH6IHyD8M-HzCgalxZIBZeM2jiN6IVyVmbNUHBbiKxIlciwluGgbAscpADNL95">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div>
+<div class="flex items-start justify-between gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-tertiary font-label-sm text-[10px] tracking-wide inline-flex items-center gap-1 border border-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Disponible (1)
+            </span>
+<span class="font-caption text-caption text-outline text-[11px] font-mono tracking-tight">523.1 H392b</span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-snug text-primary font-semibold mt-1 truncate font-headline">Breve historia del tiempo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">Stephen Hawking</p>
+<div class="mt-1 flex items-center gap-2 text-[11px] text-on-surface-variant">
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">apartment</span>
+              Sala de Ciencias
+            </span>
+<span class="">•</span>
+<span class="text-outline">Estante F-09</span>
+</div>
+</div>
+<div class="mt-2 pt-2 flex items-center justify-between border-t border-outline-variant/20 bg-surface-container-low/60 -mx-3 -mb-3 px-3 py-1.5 rounded-b-xl">
+<span class="font-caption text-caption text-[11px] text-on-surface-variant">Física Teórica</span>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded-md text-primary hover:bg-surface-container font-label-md text-[12px] transition-colors" onclick="openBookModal('Breve historia del tiempo', 'Stephen Hawking')">
+              Ficha
+            </button>
+<button class="px-3 py-1 rounded-md bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-md text-[12px] font-semibold shadow-sm" onclick="showHoldConfirmed('Breve historia del tiempo')" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">
+              Reservar
+            </button>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Drawer / Bottom Sheet para Filtros Avanzados -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-50 hidden transition-opacity opacity-0 flex items-end justify-center" id="filterOverlay" onclick="closeFilterTray(event)">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-t-2xl p-5 shadow-2xl border-t border-outline-variant/30 transform translate-y-full transition-transform duration-300" id="filterSheet" onclick="event.stopPropagation()">
+<div class="w-12 h-1 bg-surface-variant rounded-full mx-auto mb-4"></div>
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-sm text-headline-sm text-primary font-headline">Filtros Bibliográficos</h3>
+<button class="text-secondary hover:text-primary font-label-md text-label-md" onclick="resetFilters()">Restablecer</button>
+</div>
+<div class="flex flex-col gap-4">
+<div>
+<label class="font-label-md text-label-md text-on-surface mb-2 block">Disponibilidad</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="px-3 py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm text-center" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">Cualquier estado</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm text-center border border-outline-variant/30">Solo en estantería</button>
+</div>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface mb-2 block">Sede o Sala</label>
+<select class="w-full bg-surface-container rounded-lg p-2.5 font-body-md text-body-md text-on-surface outline-none border border-outline-variant/30">
+<option>Todas las salas</option>
+<option>Sala Central de Humanidades</option>
+<option>Hemeroteca y Revistas</option>
+<option>Sala de Ciencia y Tecnología</option>
+<option>Fondo Reservado e Histórico</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface mb-2 block">Formato</label>
+<div class="flex gap-2">
+<span class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm border border-outline-variant/30">Físico</span>
+<span class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm border border-outline-variant/30">Digital (eBook)</span>
+<span class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm border border-outline-variant/30">Audiolibro</span>
+</div>
+</div>
+<button class="w-full py-3 mt-2 rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold hover:bg-primary-container transition-colors shadow-sm" onclick="closeFilterTray()" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">
+          Aplicar filtros
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast de Notificación / Reserva -->
+<div class="fixed bottom-20 left-4 right-4 bg-primary text-on-primary py-3 px-4 rounded-xl shadow-xl z-50 flex items-center justify-between opacity-0 pointer-events-none transform translate-y-3 transition-all duration-300 border border-primary-container" id="actionToast">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">bookmark_added</span>
+<span class="font-body-sm text-body-sm" id="toastMessage">Ejemplar reservado con éxito.</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary-fixed underline" onclick="hideToast()">Ver</button>
+</div>
+</div>
+<script>
+  // Interacción de Filtro por Chips
+  const chips = document.querySelectorAll('.filter-chip');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        c.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      chip.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    });
+  });
+
+  // Modal / Drawer de filtros
+  function toggleFilterTray() {
+    const overlay = document.getElementById('filterOverlay');
+    const sheet = document.getElementById('filterSheet');
+    if (overlay.classList.contains('hidden')) {
+      overlay.classList.remove('hidden');
+      setTimeout(() => {
+        overlay.classList.remove('opacity-0');
+        sheet.classList.remove('translate-y-full');
+      }, 10);
+    } else {
+      closeFilterTray();
+    }
+  }
+
+  function closeFilterTray() {
+    const overlay = document.getElementById('filterOverlay');
+    const sheet = document.getElementById('filterSheet');
+    overlay.classList.add('opacity-0');
+    sheet.classList.add('translate-y-full');
+    setTimeout(() => {
+      overlay.classList.add('hidden');
+    }, 300);
+  }
+
+  function resetFilters() {
+    closeFilterTray();
+    showToast('Filtros restablecidos a la vista general.');
+  }
+
+  // Toast Feedback Microinteracción
+  let toastTimer;
+  function showToast(msg) {
+    const toast = document.getElementById('actionToast');
+    const msgEl = document.getElementById('toastMessage');
+    msgEl.innerText = msg;
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(hideToast, 3500);
+  }
+
+  function hideToast() {
+    const toast = document.getElementById('actionToast');
+    toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+  }
+
+  function showHoldConfirmed(title) {
+    showToast(`Solicitud confirmada para "${title}". Disponible para retiro.`);
+  }
+
+  function toggleScanToast() {
+    showToast('Activando cámara para lectura de ISBN / Código de barras...');
+  }
+
+  function openBookModal(title, author) {
+    showToast(`Abriendo catálogo detallado: ${title} (${author})`);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl border-t border-surface-container-high shadow-[0_-1px_12px_rgba(168,32,117,0.04)]" data-active-classes="text-primary font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-0.5 text-primary font-semibold transition-colors" data-path="catalogo" href="#"><span class="material-symbols-outlined text-[24px]">auto_stories</span><span class="font-label-sm text-label-sm tracking-normal">Catálogo</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors relative" data-path="mis-prestamos" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">history_edu</span><span class="absolute -top-1 -right-2 px-1 min-w-[14px] h-[14px] rounded-full bg-primary text-on-primary font-label-sm text-[9px] flex items-center justify-center leading-none" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255);">2</span></div><span class="font-label-sm text-label-sm tracking-normal">Mis Préstamos</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="catalogar" href="#"><span class="material-symbols-outlined text-[24px]">library_add</span><span class="font-label-sm text-label-sm tracking-normal">Catalogar</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="mi-perfil" href="#"><span class="material-symbols-outlined text-[24px]">manage_accounts</span><span class="font-label-sm text-label-sm tracking-normal">Mi Perfil</span></a></div></nav>
+
+
+
+</body></html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;700&amp;family=Bodoni+Moda:wght@400;500;700&amp;family=EB+Garamond:wght@400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-container": "#f5ecec", "surface-bright": "#fff8f7", "tertiary-fixed": "#f1dee3", "on-tertiary-fixed-variant": "#504348", "primary-fixed-dim": "#e8bbc8", "secondary-fixed": "#ffd9e1", outline: "#817477", "on-background": "#1e1b1b", "on-primary": "#ffffff", "on-primary-fixed": "#2e131d", "primary-fixed": "#ffd9e3", "on-surface-variant": "#4f4447", "on-secondary-container": "#79344b", primary: "#76525d", "tertiary-container": "#807176", "inverse-primary": "#e8bbc8", "on-tertiary-container": "#fffbff", "on-secondary-fixed-variant": "#743047", secondary: "#90475e", "on-secondary-fixed": "#3c031c", "surface-dim": "#e0d8d8", "secondary-fixed-dim": "#ffb1c6", "secondary-container": "#fda1bb", "surface-container-high": "#efe6e6", "on-surface": "#1e1b1b", "primary-container": "#906a76", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-error": "#ffffff", "outline-variant": "#d3c3c6", "tertiary-fixed-dim": "#d4c2c7", "surface-container-low": "#faf2f1", tertiary: "#66585d", surface: "#fff8f7", "on-secondary": "#ffffff", error: "#ba1a1a", "on-primary-fixed-variant": "#5e3d48", background: "#fff8f7", "surface-container-lowest": "#ffffff", "inverse-surface": "#342f30", "surface-tint": "#785460", "inverse-on-surface": "#f7efee", "surface-variant": "#e9e1e0", "on-tertiary-fixed": "#23191d", "surface-container-highest": "#e9e1e0", "on-primary-container": "#fffbff", "on-tertiary": "#ffffff"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {margin: "1rem", "space-xl": "2.25rem", gutter: "1rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-desktop": "3rem"}, fontFamily: {"body-md": ["\"Source Sans 3\""], "headline-lg": ["Newsreader"], "display-lg": ["Newsreader"], "body-lg": ["\"Source Sans 3\""], "headline-sm": ["Newsreader"], "label-md": ["\"Source Sans 3\""], caption: ["Newsreader"], "headline-md": ["Newsreader"], "body-sm": ["\"Source Sans 3\""], "label-sm": ["\"Source Sans 3\""], "title-md": ["\"Source Sans 3\""], headline: ["Libre Caslon Text"], body: ["Bodoni Moda"], display: ["Libre Caslon Text"], label: ["EB Garamond"]}, fontSize: {"body-md": ["15px", {lineHeight: "22px", fontWeight: "400"}], "headline-lg": ["28px", {lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600"}], "display-lg": ["36px", {lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "500"}], "body-lg": ["17px", {lineHeight: "26px", fontWeight: "400"}], "headline-sm": ["18px", {lineHeight: "26px", fontWeight: "600"}], "label-md": ["13px", {lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600"}], caption: ["13px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400"}], "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}], "body-sm": ["13px", {lineHeight: "18px", fontWeight: "400"}], "label-sm": ["11px", {lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600"}], "title-md": ["16px", {lineHeight: "24px", fontWeight: "600"}]}}}};</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Regresar" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="BiblioTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Kelz6439-Bg9MTWuzxs2kI8kU6kKG5ldpR9Qg1FzEkxAktKJjWyVBEggV56vr3IN_BLuHjyXxsNYryzw29283yDQRhnFbvY43651ms8Zkhwye_7WSibCybK2QsH-l0KnQnI5xegoXjXWond5AWd835PD_iyJUlBfd8XwQtR_4l2I9L58JKyzGkNREhb-Y_D3fcfRqvdnHPUyIOmPy_ZiBVpOeaLpE3-4o_Tygnum"><h1 class="font-headline-sm text-headline-sm text-primary tracking-tight truncate max-w-[180px]">Detalle Del Libro</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Perfil del usuario" class="w-11 h-11 rounded-full flex items-center justify-center hover:opacity-90 transition-opacity"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDUpDSELZ0N5MrWGCgfpZgbR4Py2PktOvhPF12s9MdQXerC2rHduWHcWnaJBLBLp9_pjKsyyWH86fqUyraN-xEUsE7gRAPrdBRdCZ35410lnwxleYU5ppMoX9OXo9EG7DOSlveHax90NKwLESnBlb4Mxph1AxKaDTyTYkTtNdHVATJojMVPEFMo8YhMvHY2VuABcpCIIx0MR0O-o-shwNdSkl5SkdkaAiBWUvdLdw8"></button></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen pb-safe"><div class="flex flex-col w-full pb-10">
+<!-- Archival Context Banner -->
+<div class="px-margin pt-4 pb-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">local_library</span>
+        Colección Iberoamericana • Lit. Siglo XX
+      </span>
+<span class="text-secondary font-semibold">REF #863-GGM</span>
+</div>
+</div>
+<!-- Book Showcase Section -->
+<div class="px-margin flex flex-col items-center pt-2 pb-6">
+<div class="relative w-44 h-64 rounded-xl shadow-xl overflow-hidden bg-surface-container-high transition-transform duration-300 hover:scale-[1.02]">
+<!-- Book Spine Lighting & Shading Effect -->
+<div class="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/40 via-white/10 to-transparent z-10 pointer-events-none"></div>
+<div class="absolute inset-0 shadow-[inset_0_0_24px_rgba(4,21,52,0.18)] z-10 pointer-events-none"></div>
+<img class="w-full h-full object-cover" data-alt="Editorial vintage book cover of Cien anos de soledad by Gabriel Garcia Marquez featuring lush tropical foliage, yellow butterflies fluttering against warm parchment and terracotta accents, deep archival navy title lettering with classic scholarly elegance and tactile linen texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB1cl0wRVZSg4AH20BpOLENEReCY13gAZloDiSxNyfWIwqNygPxKLxPFNC9A7ZAwE0V63Rt822EB0bWRlXmELh1bV8d3PMUMZ7NN8kCe8XAJG_J65DNH4dylmHoV2AN6i2-4NrkTcEa7p8C7Y9zhQHPkrtx-8i3UjCjBazEeNuGG_gaA-w01UfWlI7c4IEVaAF5DUhLn57VRfrGZcmOYRKxXPZ_5aQchPUvAhBFWgk">
+<!-- Dewey Bookmark Ribbon Overlay -->
+<div class="absolute top-0 right-3 w-6 h-9 bg-secondary shadow-md flex items-end justify-center pb-1 text-on-secondary rounded-b-sm z-20" style="background-color: rgb(203, 64, 146);">
+<span class="material-symbols-outlined text-[14px]">bookmark</span>
+</div>
+</div>
+<!-- Title & Author Metadata -->
+<div class="text-center mt-5 max-w-sm px-2">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+        Cien años de soledad
+      </h2>
+<p class="font-body-lg text-body-lg text-secondary font-semibold mt-1">
+        Gabriel García Márquez
+      </p>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5 italic">
+        Real Academia Española • Edición Conmemorativa (2019)
+      </p>
+</div>
+<!-- Quick Status Pills -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#EBF3EE] text-[#2D5A43] font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+        DISPONIBLE EN SALA
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">auto_stories</span>
+        3 Ejemplares en Acervo
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">pages</span>
+        496 págs.
+      </span>
+</div>
+</div>
+<!-- Physical Shelf & Classification Ledger Card -->
+<div class="px-margin mb-5">
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">explore</span>
+<span class="">Ubicación en Sala de Lectura</span>
+</div>
+<span class="font-caption text-caption text-secondary font-medium">Ala Poniente</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-on-surface">
+<div class="bg-surface-container-lowest rounded-lg p-2.5 shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Signatura Topográfica</span>
+<span class="font-title-md text-title-md font-bold text-primary mt-0.5 block tracking-tight">863.64 G216c</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2.5 shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Estante • Pasillo</span>
+<span class="font-title-md text-title-md font-bold text-primary mt-0.5 block tracking-tight">Piso 2 • Pasillo B-4</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+          ISBN: 978-8420471839
+        </span>
+<button class="text-secondary font-title-md text-caption hover:underline inline-flex items-center gap-0.5" id="viewMapBtn">
+          Ver croquis 3D
+          <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Synopsis Section -->
+<div class="px-margin mb-6">
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+<div class="flex items-center gap-2 mb-2 text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">format_quote</span>
+<h3 class="">Sinopsis de la Obra</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed line-clamp-3" id="synopsisText">
+        Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo. Macondo era entonces una aldea de veinte casas de barro y cañabrava construidas a la orilla de un río de aguas diáfanas. La epopeya de la familia Buendía a través de siete generaciones conjuga el mito, la tragedia y la desmesura de la memoria latinoamericana en una de las cumbres universales de la lengua española.
+      </p>
+<button class="mt-2 text-secondary font-label-md text-label-md flex items-center gap-1 hover:underline" id="toggleSynopsisBtn">
+<span class="">Leer reseña completa</span>
+<span class="material-symbols-outlined text-[16px]" id="synopsisIcon">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Loan Action Box (RF-M03-01) -->
+<div class="px-margin mb-6">
+<div class="bg-surface-container rounded-2xl p-5 shadow-md">
+<!-- Section Title & Badge -->
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Solicitud de Préstamo</h3>
+<span class="font-caption text-caption text-on-surface-variant">Gestión directa de circulación (RF-M03-01)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">Paso 1/2</span>
+</div>
+<!-- Specific Physical Copy Selection -->
+<div class="mt-3">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider block mb-2">
+          1. Selecciona Ejemplar Físico
+        </label>
+<div class="grid grid-cols-2 gap-2" id="copySelectorGroup">
+<button class="copy-btn text-left p-3 rounded-xl bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-bright transition-all flex flex-col gap-1 relative overflow-hidden" data-copy="1" style="outline: rgb(203, 64, 146) solid 2px; outline-offset: -1px;" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-title-md text-title-md font-semibold text-primary">Ejemplar #1</span>
+<span class="material-symbols-outlined text-secondary text-[18px] copy-check" style="color: rgb(203, 64, 146);">check_circle</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Cód: AR-0982-1</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-[#2D5A43] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2D5A43]"></span> Impecable
+            </span>
+</button>
+<button class="copy-btn text-left p-3 rounded-xl bg-surface-container-high text-on-surface-variant shadow-sm hover:bg-surface-container-lowest transition-all flex flex-col gap-1 relative overflow-hidden opacity-90" data-copy="2" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-title-md text-title-md font-semibold text-primary">Ejemplar #2</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px] copy-check hidden">check_circle</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Cód: AR-0982-2</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-[#2D5A43] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2D5A43]"></span> Buen estado
+            </span>
+</button>
+</div>
+</div>
+<!-- Loan Term Period Selector -->
+<div class="mt-4">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider block mb-2">
+          2. Modalidad y Plazo de Retiro
+        </label>
+<div class="flex flex-col gap-2" id="termSelectorGroup">
+<!-- Option Standard -->
+<div class="term-card cursor-pointer p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between transition-all" data-term="15" style="outline: rgb(203, 64, 146) solid 2px; outline-offset: -1px;">
+<div class="flex items-start gap-3">
+<div class="w-5 h-5 mt-0.5 rounded-full bg-primary flex items-center justify-center text-on-primary term-radio" style="background-color: rgb(203, 64, 146);">
+<span class="w-2 h-2 rounded-full bg-white" style="background-color: rgb(255, 216, 232); color: rgb(168, 32, 117);"></span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary font-bold">Préstamo Estándar</span>
+<span class="px-2 py-0.2 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm font-semibold" style="background-color: rgb(255, 216, 232); color: rgb(168, 32, 117);">15 días</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Lectura domiciliaria general para alumnos y docentes</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+</div>
+<!-- Option Research -->
+<div class="term-card cursor-pointer p-3.5 rounded-xl bg-surface-container-high opacity-85 shadow-sm flex items-center justify-between transition-all" data-term="30">
+<div class="flex items-start gap-3">
+<div class="w-5 h-5 mt-0.5 rounded-full bg-outline-variant flex items-center justify-center text-transparent term-radio">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary font-bold">Préstamo de Investigación</span>
+<span class="px-2 py-0.2 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">30 días</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Tesis de grado o proyectos de cátedra académica</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">biotech</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Due Date Countdown Ribbon -->
+<div class="mt-4 p-3.5 rounded-xl bg-surface-bright flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">event_upcoming</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Fecha Límite de Retorno</span>
+<span class="font-title-md text-title-md font-bold text-primary block" id="dueDateLabel">10 de Noviembre, 2026</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-caption text-caption text-secondary font-semibold block">Renovable x1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sin multas activas</span>
+</div>
+</div>
+<!-- Primary Action CTA -->
+<button class="w-full mt-5 h-14 bg-primary text-on-primary rounded-xl font-title-md text-title-md flex items-center justify-center gap-2.5 shadow-md active:scale-[0.99] transition-all hover:bg-primary-container" id="confirmLoanBtn" style="background: linear-gradient(135deg, rgb(203, 64, 146) 0%, rgb(168, 32, 117) 100%); color: rgb(255, 255, 255); box-shadow: rgba(203, 64, 146, 0.35) 0px 4px 14px;" type="button">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+<span class="">Confirmar Préstamo de Libro</span>
+</button>
+<p class="text-center font-caption text-caption text-on-surface-variant mt-2">
+        Al confirmar, se generará el vale digital con token NFC para retiro en mostrador.
+      </p>
+</div>
+</div>
+<!-- Secondary Actions & Patron Utilities -->
+<div class="px-margin flex items-center justify-between gap-3 mb-6">
+<button class="flex-1 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container transition-colors" id="favoriteBtn">
+<span class="material-symbols-outlined text-[20px] text-secondary" id="favIcon">bookmark_add</span>
+<span class="font-label-md text-label-md font-semibold">Guardar en Favoritos</span>
+</button>
+<button class="flex-1 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container transition-colors" id="shareBtn">
+<span class="material-symbols-outlined text-[20px] text-primary">share</span>
+<span class="font-label-md text-label-md font-semibold">Compartir Ficha</span>
+</button>
+</div>
+<!-- Patron Citation & Academic Tools Drawer -->
+<div class="px-margin mb-8">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">format_quote</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Exportar Cita Bibliográfica</h4>
+<span class="font-caption text-caption text-on-surface-variant">Formatos APA 7ma, MLA 9 y Chicago</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors" id="copyCitationBtn">
+        Copiar
+      </button>
+</div>
+</div>
+<!-- Interactive Digital Voucher / Ticket Modal Sheet -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-end sm:items-center justify-center p-0 sm:p-4" id="voucherModal">
+<div class="w-full max-w-md bg-surface-bright rounded-t-3xl sm:rounded-2xl shadow-2xl p-6 flex flex-col max-h-[795px] overflow-y-auto">
+<!-- Header -->
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">task_alt</span>
+<span class="">¡Préstamo Registrado!</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary" id="closeModalBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Ticket Body with Decorative Perforation Lines -->
+<div class="mt-3 bg-surface-container-lowest rounded-2xl p-5 shadow-sm relative overflow-hidden flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-[#EBF3EE] text-[#2D5A43] flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[28px]">library_books</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Ticket de Retiro Digital</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Cien años de soledad</h4>
+<p class="font-caption text-caption text-on-surface-variant">Gabriel García Márquez • Ejemplar #1</p>
+<!-- Barcode / QR Simulation Box -->
+<div class="w-full my-4 py-3 bg-surface-container-low rounded-xl flex flex-col items-center justify-center gap-1.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[42px] text-primary">qr_code_scanner</span>
+<div class="text-left font-mono text-[11px] text-primary tracking-widest leading-tight">
+<div class="">*BIBLIO-TRACK-2025*</div>
+<div class="text-[9px] text-on-surface-variant font-sans">TOKEN: 4892-GGM-01</div>
+</div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant text-[11px]">Presenta este código al bibliotecario en mostrador</span>
+</div>
+<div class="w-full grid grid-cols-2 gap-2 text-left pt-2">
+<div class="bg-surface-container-high/60 rounded-lg p-2.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Fecha de Solicitud</span>
+<span class="font-title-md text-title-md text-primary font-bold block" id="voucherCreatedDate">26 de Octubre, 2026</span>
+</div>
+<div class="bg-surface-container-high/60 rounded-lg p-2.5">
+<span class="font-label-sm text-label-sm text-secondary block uppercase">Devolución Máxima</span>
+<span class="font-title-md text-title-md text-secondary font-bold block" id="voucherDueDate">10 de Noviembre, 2026</span>
+</div>
+</div>
+</div>
+<!-- Modal Bottom Actions -->
+<div class="mt-5 flex flex-col gap-2">
+<button class="w-full h-12 bg-primary text-on-primary rounded-xl font-title-md text-title-md font-semibold flex items-center justify-center gap-2 shadow-sm" id="finishModalBtn" style="background: linear-gradient(135deg, rgb(203, 64, 146) 0%, rgb(168, 32, 117) 100%); color: rgb(255, 255, 255);">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="">Guardar en Cartera Digital</span>
+</button>
+<button class="w-full h-11 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold flex items-center justify-center hover:bg-surface-container-high" id="viewActiveLoansBtn">
+          Ver mis libros en préstamo
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Feedback -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-primary text-on-primary px-4 py-2.5 rounded-full shadow-lg font-label-md text-label-md flex items-center gap-2 opacity-0 pointer-events-none transition-opacity duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed" id="toastIcon">info</span>
+<span class="" id="toastMsg">Mensaje de notificación</span>
+</div>
+</div>
+<script>
+  (function () {
+    // State
+    let selectedCopy = '1';
+    let selectedTermDays = 15;
+    let isFavorite = false;
+
+    // Elements
+    const copyButtons = document.querySelectorAll('.copy-btn');
+    const termCards = document.querySelectorAll('.term-card');
+    const dueDateLabel = document.getElementById('dueDateLabel');
+    const toggleSynopsisBtn = document.getElementById('toggleSynopsisBtn');
+    const synopsisText = document.getElementById('synopsisText');
+    const synopsisIcon = document.getElementById('synopsisIcon');
+    const confirmLoanBtn = document.getElementById('confirmLoanBtn');
+    const voucherModal = document.getElementById('voucherModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const finishModalBtn = document.getElementById('finishModalBtn');
+    const voucherDueDate = document.getElementById('voucherDueDate');
+    const voucherCreatedDate = document.getElementById('voucherCreatedDate');
+    const favoriteBtn = document.getElementById('favoriteBtn');
+    const favIcon = document.getElementById('favIcon');
+    const shareBtn = document.getElementById('shareBtn');
+    const copyCitationBtn = document.getElementById('copyCitationBtn');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    const toastIcon = document.getElementById('toastIcon');
+
+    // Date computation
+    function formatSpanishDate(daysOffset) {
+      const months = [
+        'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+        'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+      ];
+      const targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() + daysOffset);
+      const day = targetDate.getDate();
+      const month = months[targetDate.getMonth()];
+      const year = targetDate.getFullYear();
+      return `${day} de ${month}, ${year}`;
+    }
+
+    function updateDueDateDisplay() {
+      const dateString = formatSpanishDate(selectedTermDays);
+      if (dueDateLabel) dueDateLabel.textContent = dateString;
+      if (voucherDueDate) voucherDueDate.textContent = dateString;
+    }
+
+    // Initialize due date
+    updateDueDateDisplay();
+    if (voucherCreatedDate) {
+      voucherCreatedDate.textContent = formatSpanishDate(0);
+    }
+
+    // Copy selection interaction
+    copyButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        selectedCopy = btn.getAttribute('data-copy');
+        copyButtons.forEach((b) => {
+          b.classList.remove('bg-surface-container-lowest', 'opacity-100');
+          b.classList.add('bg-surface-container-high', 'opacity-85');
+          const check = b.querySelector('.copy-check');
+          if (check) check.classList.add('hidden');
+        });
+        btn.classList.add('bg-surface-container-lowest', 'opacity-100');
+        btn.classList.remove('bg-surface-container-high', 'opacity-85');
+        const check = btn.querySelector('.copy-check');
+        if (check) check.classList.remove('hidden');
+        showToast(`Seleccionado Ejemplar #${selectedCopy}`, 'bookmark');
+      });
+    });
+
+    // Term selection interaction
+    termCards.forEach((card) => {
+      card.addEventListener('click', () => {
+        selectedTermDays = parseInt(card.getAttribute('data-term'), 10);
+        termCards.forEach((c) => {
+          c.classList.remove('bg-surface-container-lowest', 'opacity-100');
+          c.classList.add('bg-surface-container-high', 'opacity-85');
+          const radio = c.querySelector('.term-radio');
+          if (radio) {
+            radio.classList.remove('bg-primary');
+            radio.classList.add('bg-outline-variant');
+            radio.classList.add('text-transparent');
+          }
+        });
+        card.classList.add('bg-surface-container-lowest', 'opacity-100');
+        card.classList.remove('bg-surface-container-high', 'opacity-85');
+        const activeRadio = card.querySelector('.term-radio');
+        if (activeRadio) {
+          activeRadio.classList.add('bg-primary');
+          activeRadio.classList.remove('bg-outline-variant', 'text-transparent');
+        }
+        updateDueDateDisplay();
+        showToast(`Plazo ajustado a ${selectedTermDays} días`, 'schedule');
+      });
+    });
+
+    // Synopsis Expand/Collapse
+    if (toggleSynopsisBtn && synopsisText) {
+      toggleSynopsisBtn.addEventListener('click', () => {
+        const isCollapsed = synopsisText.classList.contains('line-clamp-3');
+        if (isCollapsed) {
+          synopsisText.classList.remove('line-clamp-3');
+          toggleSynopsisBtn.querySelector('span:first-child').textContent = 'Contraer reseña';
+          if (synopsisIcon) synopsisIcon.textContent = 'expand_less';
+        } else {
+          synopsisText.classList.add('line-clamp-3');
+          toggleSynopsisBtn.querySelector('span:first-child').textContent = 'Leer reseña completa';
+          if (synopsisIcon) synopsisIcon.textContent = 'expand_more';
+        }
+      });
+    }
+
+    // Modal triggers
+    if (confirmLoanBtn) {
+      confirmLoanBtn.addEventListener('click', () => {
+        updateDueDateDisplay();
+        if (voucherModal) voucherModal.classList.remove('hidden');
+      });
+    }
+
+    function closeModal() {
+      if (voucherModal) voucherModal.classList.add('hidden');
+    }
+
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (finishModalBtn) {
+      finishModalBtn.addEventListener('click', () => {
+        closeModal();
+        showToast('Ticket guardado en biblioteca digital', 'download_done');
+      });
+    }
+
+    // Favorite Toggle
+    if (favoriteBtn && favIcon) {
+      favoriteBtn.addEventListener('click', () => {
+        isFavorite = !isFavorite;
+        if (isFavorite) {
+          favIcon.textContent = 'bookmark';
+          favIcon.classList.add('text-secondary');
+          showToast('Añadido a tus favoritos', 'favorite');
+        } else {
+          favIcon.textContent = 'bookmark_add';
+          showToast('Eliminado de favoritos', 'bookmark_border');
+        }
+      });
+    }
+
+    // Share action
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Cien años de soledad - BiblioTech',
+            text: 'Consulta la disponibilidad de este clásico en el catálogo general.',
+            url: window.location.href,
+          }).catch(() => {});
+        } else {
+          showToast('Enlace de ficha copiado al portapapeles', 'share');
+        }
+      });
+    }
+
+    // Copy Citation
+    if (copyCitationBtn) {
+      copyCitationBtn.addEventListener('click', () => {
+        const citation = 'García Márquez, G. (2019). Cien años de soledad (Ed. Conmemorativa). Real Academia Española / Alfaguara.';
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(citation).then(() => {
+            showToast('Cita APA copiada al portapapeles', 'content_copy');
+          });
+        } else {
+          showToast('Cita bibliográfica disponible', 'content_copy');
+        }
+      });
+    }
+
+    // Toast helper
+    let toastTimeout;
+    function showToast(message, icon = 'info') {
+      if (!toast) return;
+      if (toastMsg) toastMsg.textContent = message;
+      if (toastIcon) toastIcon.textContent = icon;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2600);
+    }
+  })();
+</script></main>
+
+
+</body></html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+<meta content="mobile_blank" name="shell-type">
+<title>BiblioTech - Acceso Institucional</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;700&amp;family=Bodoni+Moda:wght@400;500;700&amp;family=EB+Garamond:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-container": "#f5ecec", "surface-container-high": "#efe6e6", primary: "#76525d", "tertiary-container": "#807176", "on-primary-fixed-variant": "#5e3d48", "on-tertiary-fixed-variant": "#504348", "on-surface-variant": "#4f4447", "secondary-fixed-dim": "#ffb1c6", "on-secondary": "#ffffff", "on-secondary-fixed": "#3c031c", "inverse-surface": "#342f30", "primary-container": "#906a76", secondary: "#90475e", "inverse-primary": "#e8bbc8", "inverse-on-surface": "#f7efee", error: "#ba1a1a", "secondary-fixed": "#ffd9e1", "on-primary-container": "#fffbff", "error-container": "#ffdad6", "secondary-container": "#fda1bb", "surface-bright": "#fff8f7", "on-primary": "#ffffff", "primary-fixed": "#ffd9e3", "on-secondary-fixed-variant": "#743047", "surface-container-highest": "#e9e1e0", "on-error": "#ffffff", "tertiary-fixed-dim": "#d4c2c7", tertiary: "#66585d", "on-primary-fixed": "#2e131d", "tertiary-fixed": "#f1dee3", "on-background": "#1e1b1b", "on-error-container": "#93000a", "surface-container-low": "#faf2f1", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#23191d", "on-secondary-container": "#79344b", background: "#fff8f7", "outline-variant": "#d3c3c6", outline: "#817477", "surface-tint": "#785460", "on-surface": "#1e1b1b", "on-tertiary-container": "#fffbff", "surface-dim": "#e0d8d8", "on-tertiary": "#ffffff", surface: "#fff8f7", "primary-fixed-dim": "#e8bbc8", "surface-variant": "#e9e1e0"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-md": "1rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-xl": "2.25rem", margin: "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-desktop": "3rem", gutter: "1rem"}, fontFamily: {"body-lg": ["\"Source Sans 3\""], caption: ["Newsreader"], "label-sm": ["\"Source Sans 3\""], "title-md": ["\"Source Sans 3\""], "display-lg": ["Newsreader"], "headline-md": ["Newsreader"], "body-md": ["\"Source Sans 3\""], "headline-lg": ["Newsreader"], "body-sm": ["\"Source Sans 3\""], "label-md": ["\"Source Sans 3\""], "headline-sm": ["Newsreader"], headline: ["Libre Caslon Text"], display: ["Libre Caslon Text"], body: ["Bodoni Moda"], label: ["EB Garamond"]}, fontSize: {"body-lg": ["17px", {lineHeight: "26px", fontWeight: "400"}], caption: ["13px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400"}], "label-sm": ["11px", {lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600"}], "title-md": ["16px", {lineHeight: "24px", fontWeight: "600"}], "display-lg": ["36px", {lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "500"}], "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}], "body-md": ["15px", {lineHeight: "22px", fontWeight: "400"}], "headline-lg": ["28px", {lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600"}], "body-sm": ["13px", {lineHeight: "18px", fontWeight: "400"}], "label-md": ["13px", {lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600"}], "headline-sm": ["18px", {lineHeight: "26px", fontWeight: "600"}]}}}};</script>
+<style>
+    @layer base {
+      html, body {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-body-md text-on-surface pt-safe pb-safe flex flex-col min-h-screen">
+<main class="flex flex-col relative w-full bg-surface min-h-screen">
+<div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Brand & Editorial Academic Header -->
+<header class="flex flex-col items-center text-center pt-space-md pb-space-md">
+<!-- Editorial Emblem with warm rose tones -->
+<div class="relative flex items-center justify-center w-24 h-24 rounded-full bg-surface-container-low border border-outline-variant/50 shadow-sm mb-space-sm">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[36px]">auto_stories</span>
+</div>
+<span class="absolute -bottom-1 -right-1 flex h-7 w-7 items-center justify-center rounded-full bg-primary text-on-primary shadow-sm ring-2 ring-surface">
+<span class="material-symbols-outlined text-[15px]">school</span>
+</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/40 mt-1">
+<span class="material-symbols-outlined text-primary text-[16px]">local_library</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold tracking-wider uppercase">Red de Bibliotecas Universitarias</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight mt-2 italic">Biblio<span class="text-primary not-italic font-bold">Track</span></h1>
+<p class="font-caption text-caption text-on-surface-variant max-w-[290px] mt-1 italic">
+          Acervo editorial, manuscritos, repositorio digital y gestión de salas académicas.
+        </p>
+</header>
+<!-- Segmented Controller: Iniciar Sesión / Registrarse -->
+<div class="p-1 rounded-xl bg-surface-container flex gap-1 mb-space-md shadow-sm border border-outline-variant/30">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-surface-container-lowest text-primary font-title-md text-title-md shadow-sm transition-all duration-200 flex items-center justify-center gap-1.5 border border-primary/20" id="tab-login" onclick="switchAuthTab('login')">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+<span class="">Iniciar Sesión</span>
+</button>
+<button class="flex-1 py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-primary font-title-md text-title-md transition-all duration-200 flex items-center justify-center gap-1.5" id="tab-register" onclick="switchAuthTab('register')">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+<span class="">Registrarse</span>
+</button>
+</div>
+<!-- Quick Profile Selector (Estudiante, Docente, Investigador) -->
+<div class="rounded-xl bg-surface-container-low p-3 mb-space-md border border-outline-variant/40 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Perfil de Acceso Rápido</span>
+<span class="font-caption text-caption text-on-surface-variant">Selecciona tu rol</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="role-pill flex flex-col items-center py-2 px-1 rounded-lg bg-surface-container-lowest text-primary border-2 border-primary shadow-xs transition-all text-center" onclick="selectRole(this, 'student')" type="button" style="border-color: rgb(203, 64, 146); color: rgb(203, 64, 146);">
+<span class="material-symbols-outlined text-[20px] mb-0.5">school</span>
+<span class="font-label-sm text-[11px] leading-tight">Estudiante</span>
+</button>
+<button class="role-pill flex flex-col items-center py-2 px-1 rounded-lg bg-surface-container text-on-surface-variant border border-outline-variant/50 transition-all text-center hover:bg-surface-container-lowest" onclick="selectRole(this, 'faculty')" type="button">
+<span class="material-symbols-outlined text-[20px] mb-0.5">history_edu</span>
+<span class="font-label-sm text-[11px] leading-tight">Docente</span>
+</button>
+<button class="role-pill flex flex-col items-center py-2 px-1 rounded-lg bg-surface-container text-on-surface-variant border border-outline-variant/50 transition-all text-center hover:bg-surface-container-lowest" onclick="selectRole(this, 'researcher')" type="button">
+<span class="material-symbols-outlined text-[20px] mb-0.5">biotech</span>
+<span class="font-label-sm text-[11px] leading-tight">Investigador</span>
+</button>
+</div>
+</div>
+<!-- CONTAINER 1: Formulario de Inicio de Sesión (RF-M01-02) -->
+<div class="flex flex-col gap-space-md" id="view-login">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm border border-outline-variant/40 flex flex-col gap-space-md">
+<!-- Institutional ID Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between font-semibold" for="login-id">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">badge</span>
+<span class="">Carné Institucional o Correo</span>
+</span>
+<span class="font-caption text-caption text-secondary font-normal">Ej: 2024-B8492</span>
+</label>
+<div class="relative flex items-center rounded-lg bg-surface-container-low border border-outline-variant focus-within:border-primary focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<div class="absolute left-3 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">account_circle</span>
+</div>
+<input class="w-full h-[52px] pl-11 pr-4 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline border-none outline-none focus:ring-0" id="login-id" placeholder="usuario@universidad.edu" type="text">
+</div>
+</div>
+<!-- Password Input -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1.5 font-semibold" for="login-password">
+<span class="material-symbols-outlined text-primary text-[18px]">key</span>
+<span class="">Contraseña</span>
+</label>
+<button class="font-caption text-caption text-primary hover:underline underline-offset-4 focus:outline-none font-medium" type="button" style="color: rgb(203, 64, 146);">
+                ¿Olvidaste tu clave?
+              </button>
+</div>
+<div class="relative flex items-center rounded-lg bg-surface-container-low border border-outline-variant focus-within:border-primary focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<div class="absolute left-3 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<input class="w-full h-[52px] pl-11 pr-11 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline border-none outline-none focus:ring-0" id="login-password" placeholder="Introduce tu clave segura" type="password">
+<button aria-label="Alternar visibilidad de contraseña" class="absolute right-3 flex items-center text-on-surface-variant hover:text-primary transition-colors focus:outline-none p-1" onclick="togglePasswordVisibility('login-password', 'login-eye-icon')" type="button">
+<span class="material-symbols-outlined text-[20px]" id="login-eye-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember device checkbox -->
+<label class="flex items-center gap-2.5 cursor-pointer py-1 select-none">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mantener terminal y credencial autenticadas</span>
+</label>
+<!-- Primary Action CTA -->
+<button class="w-full h-12 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md shadow-md flex items-center justify-center gap-2 transition-transform active:scale-[0.99] font-semibold" type="button" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255); box-shadow: rgba(203, 64, 146, 0.35) 0px 4px 14px 0px;">
+<span class="">Iniciar Sesión</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Rapid Physical Card Scanner Prompt -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex items-center justify-between border border-outline-variant/40 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">¿Tienes carnet físico?</span>
+<span class="font-caption text-caption text-on-surface-variant">Escanea código de barras o credencial</span>
+</div>
+</div>
+<button class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-primary border border-primary/30 font-label-md text-label-md shadow-xs hover:bg-surface-container flex items-center gap-1.5 transition-colors font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">photo_camera</span>
+<span class="">Escanear</span>
+</button>
+</div>
+<!-- Archival Campus Advisory Banner -->
+<div class="rounded-xl bg-surface-container p-space-md flex gap-3 items-start border border-outline-variant/40">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">campaign</span>
+<div class="flex flex-col text-on-surface">
+<span class="font-label-md text-label-md text-secondary font-semibold">Horario de Salas de Lectura</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              El préstamo interbibliotecario y sala de investigadores están habilitados hasta las 21:00 hrs. Consulta reservas desde tu portal.
+            </p>
+</div>
+</div>
+</div>
+<!-- CONTAINER 2: Formulario de Registro de Lector (RF-M01-01) -->
+<div class="hidden flex-col gap-space-md" id="view-register">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm border border-outline-variant/40 flex flex-col gap-space-md">
+<div class="flex items-start justify-between border-b pb-space-sm border-outline-variant/40">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Alta de Nuevo Lector</h2>
+<p class="font-caption text-caption text-on-surface-variant">Emisión de carnet institucional digital.</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-secondary font-label-sm text-label-sm font-semibold">RF-M01-01</span>
+</div>
+<!-- Nombre Completo -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="reg-fullname">Nombre y Apellidos Completos</label>
+<div class="relative flex items-center rounded-lg bg-surface-container-low border border-outline-variant focus-within:border-primary focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary/20">
+<div class="absolute left-3 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<input class="w-full h-[52px] pl-11 pr-4 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline border-none outline-none focus:ring-0" id="reg-fullname" placeholder="Dra. María Elena Salgado" type="text">
+</div>
+</div>
+<!-- Tipo de Usuario Reader Persona -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="reg-role">Categoría Académica / Tipo de Lector</label>
+<div class="relative flex items-center rounded-lg bg-surface-container-low border border-outline-variant focus-within:border-primary focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary/20">
+<div class="absolute left-3 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<select class="w-full h-[52px] pl-11 pr-8 bg-transparent font-body-md text-body-md text-on-surface appearance-none border-none outline-none cursor-pointer focus:ring-0" id="reg-role">
+<option value="student">Estudiante de Pregrado / Posgrado</option>
+<option value="faculty">Catedrático / Docente Titular</option>
+<option value="researcher">Investigador Asociado / Posdoctoral</option>
+<option value="alumni">Egresado / Miembro Colegiado</option>
+<option value="public">Lector General / Sala de Consulta</option>
+</select>
+<div class="absolute right-3 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Carné / Matrícula & Correo -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="reg-card-id">Matrícula / Carné Institucional</label>
+<div class="relative flex items-center rounded-lg bg-surface-container-low border border-outline-variant focus-within:border-primary focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary/20">
+<div class="absolute left-3 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<input class="w-full h-[52px] pl-11 pr-4 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline border-none outline-none focus:ring-0" id="reg-card-id" placeholder="EXP-908234" type="text">
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="reg-email">Correo Institucional (.edu / .org)</label>
+<div class="relative flex items-center rounded-lg bg-surface-container-low border border-outline-variant focus-within:border-primary focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary/20">
+<div class="absolute left-3 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+<input class="w-full h-[52px] pl-11 pr-4 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline border-none outline-none focus:ring-0" id="reg-email" placeholder="m.salgado@universidad.edu" type="email">
+</div>
+</div>
+</div>
+<!-- Password Creation Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="reg-pass">Definir Clave Secreta</label>
+<div class="relative flex items-center rounded-lg bg-surface-container-low border border-outline-variant focus-within:border-primary focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary/20">
+<div class="absolute left-3 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+</div>
+<input class="w-full h-[52px] pl-11 pr-11 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline border-none outline-none focus:ring-0" id="reg-pass" placeholder="Mínimo 8 caracteres alfanuméricos" type="password">
+<button aria-label="Alternar visibilidad de contraseña" class="absolute right-3 flex items-center text-on-surface-variant hover:text-primary transition-colors focus:outline-none p-1" onclick="togglePasswordVisibility('reg-pass', 'reg-eye-icon')" type="button">
+<span class="material-symbols-outlined text-[20px]" id="reg-eye-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Consent Agreement -->
+<label class="flex items-start gap-2.5 cursor-pointer py-1 select-none">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer mt-0.5 shrink-0" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              Acepto el reglamento general de préstamos, custodia de ejemplares y normativas del fondo bibliográfico.
+            </span>
+</label>
+<!-- Registration CTA Button -->
+<button class="w-full h-12 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md shadow-md flex items-center justify-center gap-2 transition-transform active:scale-[0.99] font-semibold" type="button" style="background-color: rgb(203, 64, 146); color: rgb(255, 255, 255); box-shadow: rgba(203, 64, 146, 0.35) 0px 4px 14px 0px;">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span class="">Crear Cuenta de Lector</span>
+</button>
+</div>
+</div>
+<!-- Featured Archival Collection Showcase Mini-Card -->
+<div class="mt-space-lg rounded-xl bg-surface-container-low p-space-md border border-outline-variant/40 shadow-xs flex items-center gap-space-md">
+<div class="w-16 h-20 rounded-lg overflow-hidden shrink-0 shadow-sm bg-surface-container flex items-center justify-center border border-outline-variant/30 text-primary">
+<span class="material-symbols-outlined text-[32px]">menu_book</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-secondary font-label-sm text-label-sm font-semibold uppercase">Fondo Antiguo</span>
+<span class="font-caption text-caption text-on-surface-variant">Colección Rara</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate font-semibold">Códice de Manuscritos Épicos</h3>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-1 italic">Edición facsimilar y catalogación digital abierta para lectores.</p>
+</div>
+</div>
+<!-- Footer: Privacy, System Governance & Academic Verification -->
+<footer class="mt-space-xl pt-space-md border-t border-outline-variant/30 flex flex-col items-center text-center gap-space-sm">
+<div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-on-surface-variant">
+<a class="font-caption text-caption hover:text-primary transition-colors" href="javascript:void(0)">Términos de Biblioteca</a>
+<span class="text-outline-variant text-[10px]">•</span>
+<a class="font-caption text-caption hover:text-primary transition-colors" href="javascript:void(0)">Aviso de Privacidad</a>
+<span class="text-outline-variant text-[10px]">•</span>
+<a class="font-caption text-caption hover:text-primary transition-colors" href="javascript:void(0)">Mesa de Ayuda</a>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span class="font-label-sm text-label-sm font-medium">Autenticación Institucional Cifrada TLS 1.3 · SAML/CAS</span>
+</div>
+<p class="font-caption text-caption text-outline">© 2024 BiblioTrack · Warm Editorial Academic Design System</p>
+</footer>
+</div>
+</main>
+<script>
+    function switchAuthTab(target) {
+      const loginView = document.getElementById('view-login');
+      const registerView = document.getElementById('view-register');
+      const tabLogin = document.getElementById('tab-login');
+      const tabRegister = document.getElementById('tab-register');
+
+      if (target === 'login') {
+        loginView.classList.remove('hidden');
+        loginView.classList.add('flex');
+        registerView.classList.add('hidden');
+        registerView.classList.remove('flex');
+
+        tabLogin.className = 'flex-1 py-2.5 px-3 rounded-lg bg-surface-container-lowest text-primary font-title-md text-title-md shadow-sm transition-all duration-200 flex items-center justify-center gap-1.5 border border-primary/20';
+        tabRegister.className = 'flex-1 py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-primary font-title-md text-title-md transition-all duration-200 flex items-center justify-center gap-1.5';
+      } else {
+        registerView.classList.remove('hidden');
+        registerView.classList.add('flex');
+        loginView.classList.add('hidden');
+        loginView.classList.remove('flex');
+
+        tabRegister.className = 'flex-1 py-2.5 px-3 rounded-lg bg-surface-container-lowest text-primary font-title-md text-title-md shadow-sm transition-all duration-200 flex items-center justify-center gap-1.5 border border-primary/20';
+        tabLogin.className = 'flex-1 py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-primary font-title-md text-title-md transition-all duration-200 flex items-center justify-center gap-1.5';
+      }
+    }
+
+    function selectRole(button, role) {
+      document.querySelectorAll('.role-pill').forEach(btn => {
+        btn.className = 'role-pill flex flex-col items-center py-2 px-1 rounded-lg bg-surface-container text-on-surface-variant border border-outline-variant/50 transition-all text-center hover:bg-surface-container-lowest';
+      });
+      button.className = 'role-pill flex flex-col items-center py-2 px-1 rounded-lg bg-surface-container-lowest text-primary border-2 border-primary shadow-xs transition-all text-center';
+      
+      const regRole = document.getElementById('reg-role');
+      if (regRole) {
+        regRole.value = role;
+      }
+    }
+
+    function togglePasswordVisibility(inputId, iconId) {
+      const input = document.getElementById(inputId);
+      const icon = document.getElementById(iconId);
+      if (!input || !icon) return;
+
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+  </script>
+
+
+
+
+</body></html>
