@@ -1,0 +1,44 @@
+Requerimientos Sara Lorena De Los Angeles Casas Zambrano
+
+RF-M01-01 Registro de usuarios 
+Gestión de 
+Usuarios 
+ 
+RF-M01-02 Autenticación de usuarios 
+Gestión de 
+Usuarios 
+ 
+RF-M02-01 Registro y catalogación de 
+libros 
+Gestión de 
+Catalogación 
+
+RF-M02-02 Búsqueda y consulta 
+bibliográfica 
+Gestión de 
+Catalogación 
+
+RF-M03-01 Registro de préstamo de libro 
+Préstamos y 
+Devoluciones 
+
+Requerimientos Geraldine Lucumi Sanchez
+
+RF-M03-02 Registro de devolución 
+Préstamos y 
+Devoluciones 
+
+RF-M04-01 Generación de sanciones por mora 
+Sanciones y 
+Renovaciones 
+
+RF-M04-02 Renovación de préstamo 
+Sanciones y 
+Renovaciones 
+
+RF-M05-01 Generación de reportes de 
+circulación 
+Reportes e Historial 
+
+RF-M04-02 Hacer pruebas de funcionamiento
+Zona de pruebas
